@@ -1,0 +1,2 @@
+2026-10-08T22:59:40.173+0900	INFO	cli/main.log.go:31	Info log	{"line": 1}
+2026-10-08T22:59:40.174+0900	INFO	cli/main.log.go:32	Info log	{"line": 2}
