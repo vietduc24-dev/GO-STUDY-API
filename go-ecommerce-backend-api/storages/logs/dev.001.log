@@ -1,1 +1,2 @@
-2026-10-09T23:45:29.907+0900	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-12T00:01:43.673+0900	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-12T00:01:43.783+0900	INFO	initialize/redis.go:41	valu score is::	{"value": "100"}

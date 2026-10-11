@@ -1,7 +1,7 @@
 server:
  port: 8080
 mysql:
-  host: 127.0.0.0.1
+  host: 127.0.0.1
   port: 3306
   user: root
   password: root1234
@@ -16,3 +16,10 @@ log:
   max_backups: 3
   max_age: 7 #day
   compress: true
+redis:
+ host: 127.0.0.1 
+ port: 6381
+ password:
+ database: 0
+
+ 
