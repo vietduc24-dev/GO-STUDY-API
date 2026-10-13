@@ -1,2 +1,18 @@
 2026-10-12T00:01:43.673+0900	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
 2026-10-12T00:01:43.783+0900	INFO	initialize/redis.go:41	valu score is::	{"value": "100"}
+2026-10-12T23:43:04.606+0900	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-12T23:43:04.608+0900	ERROR	initialize/mysql.go:16	InitMysql failed	{"error": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+go-ecommerce-backend-api/internal/initialize.checkErrorPanic
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/internal/initialize/mysql.go:16
+go-ecommerce-backend-api/internal/initialize.InitMySql
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/internal/initialize/mysql.go:27
+go-ecommerce-backend-api/internal/initialize.Run
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/internal/initialize/run.go:15
+main.main
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/cmd/server/main.go:9
+runtime.main
+	/opt/homebrew/Cellar/go/1.27.1/libexec/src/runtime/proc.go:302
+2026-10-12T23:43:52.795+0900	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-12T23:43:52.874+0900	INFO	initialize/redis.go:41	valu score is::	{"value": "100"}
+2026-10-12T23:44:16.928+0900	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-12T23:44:16.988+0900	INFO	initialize/redis.go:41	valu score is::	{"value": "100"}

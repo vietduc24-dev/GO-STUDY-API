@@ -1,18 +1,41 @@
 package initialize
 
 import (
-	c "go-ecommerce-backend-api/internal/controller"
+	"go-ecommerce-backend-api/global"
+	"go-ecommerce-backend-api/internal/routers"
 
 	"github.com/gin-gonic/gin"
 )
 
 func InitRouter() *gin.Engine {
-	r := gin.Default()
+	var r *gin.Engine
+	if global.Config.Server.Mode == "dev" {
+		gin.SetMode(gin.DebugMode)
+		gin.ForceConsoleColor()
+		r = gin.Default()
+	} else {
+		gin.SetMode(gin.ReleaseMode)
+		r = gin.New()
+	}
+	//middleware
+	// r.Use() //loggin
+	// r.Use() //cross
+	// r.Use() // limiter global
+	managerRouter := routers.RouterGroupApp.Manager
+	userRouter := routers.RouterGroupApp.User
 
-	v1 := r.Group("/api/v1")
+	MainGroup := r.Group("v1/2024")
 	{
-		v1.GET("/pong", c.NewPongController().Pong)
-		v1.GET("/user/:id", c.NewUserController().GetUserByID)
+		MainGroup.GET("/checkStatus")
+	}
+	{
+		userRouter.InitUserRouter(MainGroup)
+		userRouter.InitProductRouter(MainGroup)
+
+	}
+	{
+		managerRouter.InitAdminRouter(MainGroup)
+		managerRouter.InitUserRouter(MainGroup)
 	}
 	return r
 }
