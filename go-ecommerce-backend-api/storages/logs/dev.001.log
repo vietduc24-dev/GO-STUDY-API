@@ -16,3 +16,23 @@ runtime.main
 2026-10-12T23:43:52.874+0900	INFO	initialize/redis.go:41	valu score is::	{"value": "100"}
 2026-10-12T23:44:16.928+0900	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
 2026-10-12T23:44:16.988+0900	INFO	initialize/redis.go:41	valu score is::	{"value": "100"}
+2026-10-13T23:54:32.288+0900	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-13T23:54:34.116+0900	ERROR	initialize/redis.go:24	Redis initavatiol error	{"error": "dial tcp 127.0.0.1:6381: connect: connection refused"}
+go-ecommerce-backend-api/internal/initialize.InitRedis
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/internal/initialize/redis.go:24
+go-ecommerce-backend-api/internal/initialize.Run
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/internal/initialize/run.go:16
+main.main
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/cmd/server/main.go:9
+runtime.main
+	/opt/homebrew/Cellar/go/1.27.1/libexec/src/runtime/proc.go:302
+2026-10-13T23:57:29.007+0900	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-13T23:57:30.896+0900	ERROR	initialize/redis.go:24	Redis initavatiol error	{"error": "dial tcp 127.0.0.1:6381: connect: connection refused"}
+go-ecommerce-backend-api/internal/initialize.InitRedis
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/internal/initialize/redis.go:24
+go-ecommerce-backend-api/internal/initialize.Run
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/internal/initialize/run.go:16
+main.main
+	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/cmd/server/main.go:9
+runtime.main
+	/opt/homebrew/Cellar/go/1.27.1/libexec/src/runtime/proc.go:302
