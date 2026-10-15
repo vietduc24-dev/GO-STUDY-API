@@ -16,9 +16,9 @@ func (pr *UserRouter) InitUserRouter(Router *gin.RouterGroup) {
 	userRouterPublic := Router.Group("/user")
 	{
 		userRouterPublic.POST("/register", userController.Register)
-		userRouterPublic.POST("/otp")
-		userRouterPublic.POST("/verify-otp")
-		userRouterPublic.POST("/login")
+		userRouterPublic.POST("/otp", func(c *gin.Context) { c.Status(501) })
+		userRouterPublic.POST("/verify-otp", func(c *gin.Context) { c.Status(501) })
+		userRouterPublic.POST("/login", func(c *gin.Context) { c.Status(501) })
 
 	}
 	//private router
@@ -27,10 +27,6 @@ func (pr *UserRouter) InitUserRouter(Router *gin.RouterGroup) {
 	// userRouterPrivate.Use(Authen())
 	// userRouterPrivate.Use(Permission())
 	{
-		userRouterPrivate.GET("/get_info")
-		userRouterPrivate.POST("/otp")
-		userRouterPrivate.POST("/verify-otp")
-		userRouterPrivate.POST("/login")
-
+		userRouterPrivate.GET("/get_info", func(c *gin.Context) { c.Status(501) })
 	}
 }

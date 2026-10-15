@@ -10,8 +10,8 @@ func (pr *ProductRouter) InitProductRouter(Router *gin.RouterGroup) {
 	// public router
 	productRouterPublic := Router.Group("/product")
 	{
-		productRouterPublic.GET("/search")
-		productRouterPublic.GET("/detail/:id")
+		productRouterPublic.GET("/search", func(c *gin.Context) { c.Status(501) })
+		productRouterPublic.GET("/detail/:id", func(c *gin.Context) { c.Status(501) })
 
 	}
 	//private router

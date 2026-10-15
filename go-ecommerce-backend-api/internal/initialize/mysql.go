@@ -31,7 +31,6 @@ func InitMySql() {
 	//set pool
 	SetPool()
 	MigrateTables()
-	genTableDAO()
 }
 
 // open pool speed up performance query db

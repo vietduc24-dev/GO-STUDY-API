@@ -14,6 +14,6 @@ func (pr *UserRouter) InitUserRouter(Router *gin.RouterGroup) {
 	//adminRouterPrivate.Use(Authen())
 	//adminRouterPrivate.Use(Permission())
 	{
-		userRouterPrivate.POST("/active_user")
+		userRouterPrivate.POST("/active_user", func(c *gin.Context) { c.Status(501) })
 	}
 }

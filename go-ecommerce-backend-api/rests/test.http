@@ -1,0 +1,4 @@
+### checkstatus by docker
+GET http://localhost:8080/v1/health/alive
+
+### 

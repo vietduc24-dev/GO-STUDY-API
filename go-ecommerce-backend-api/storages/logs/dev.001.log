@@ -36,3 +36,9 @@ main.main
 	/Users/tranvietduc/GO-STUDY-API/go-ecommerce-backend-api/cmd/server/main.go:9
 runtime.main
 	/opt/homebrew/Cellar/go/1.27.1/libexec/src/runtime/proc.go:302
+2026-10-15T23:48:28.676+0700	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-15T23:48:28.778+0700	INFO	initialize/redis.go:41	valu score is::	{"value": "100"}
+2026-10-15T23:49:40.262+0700	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-15T23:49:40.337+0700	INFO	initialize/redis.go:41	valu score is::	{"value": "100"}
+2026-10-15T23:50:05.055+0700	INFO	initialize/run.go:14	config log ok	{"ok ": "ok"}
+2026-10-15T23:50:05.125+0700	INFO	initialize/redis.go:41	valu score is::	{"value": "100"}
